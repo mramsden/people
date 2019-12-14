@@ -26,6 +26,8 @@ module.exports.seed = function seed(count = 100) {
 			return people;
 		}, []);
 		resolve();
+	}).then(() => {
+		console.log(`Seeded database with ${count} people`);
 	});
 };
 
